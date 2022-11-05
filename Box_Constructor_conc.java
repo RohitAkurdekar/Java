@@ -102,6 +102,20 @@ public class Box_Constructor_conc {
     public void setHeight(int height) {
         this.height = height;
     }
+    
+    
+    /**********************************************************
+     * @name privateFunc
+     * @date 05/nov/2022
+     * @brief Example of encapsulation
+     *        This func is accessable only in this class 
+     *          can't access outside of class 
+     * @return none
+    ***********************************************************/
+    private void privateFunc()
+    {
+        System.out.println("This is example of encapsulation");
+    }
 
     /*******************************************************
      * @name calcVolume
@@ -125,6 +139,8 @@ public class Box_Constructor_conc {
         // create a object of class using def no-args constructor
         Box_Constructor_conc b2 = new Box_Constructor_conc();
         System.out.println(b2);
+        
+        b2.privateFunc();
 
         System.out.println("\n---------------- EoC --------------------------");
     }
